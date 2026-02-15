@@ -125,40 +125,22 @@
     animation: float 25s ease-in-out infinite reverse;
 }
 
-.ecosystem-visual {
+.ecosystem-visual-fullwidth {
     position: relative;
     z-index: 1;
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 40px;
-    background: var(--white);
-    border-radius: 32px;
-    box-shadow: var(--shadow-xl);
+    width: 100%;
+    margin: 60px 0;
     overflow: hidden;
 }
 
-.ecosystem-visual::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(237, 28, 36, 0.03), rgba(2, 238, 251, 0.03));
-    z-index: 0;
-}
-
-.ecosystem-visual img {
+.ecosystem-visual-fullwidth img {
     width: 100%;
     height: auto;
     display: block;
-    position: relative;
-    z-index: 1;
-    border-radius: 24px;
     transition: transform var(--duration-slow) var(--ease-smooth);
 }
 
-.ecosystem-visual:hover img {
+.ecosystem-visual-fullwidth:hover img {
     transform: scale(1.02);
 }
 
@@ -699,9 +681,8 @@
         padding: 60px 0;
     }
     
-    .ecosystem-visual {
-        padding: 20px;
-        margin: 40px auto;
+    .ecosystem-visual-fullwidth {
+        margin: 40px 0;
     }
     
     .ecosystem-stats {
