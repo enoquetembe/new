@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Kwellaa</title>
+    <link rel="icon" type="image/png" href="public/assets/img/logos/logo_temp.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/servicos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="modern-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="KwellaSa/assets/img/hlogo.png" alt="Wella Logo">
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="Servico.html" class="nav-link active">Serviços</a></li>
+                <li><a href="index.html#app" class="nav-link">Aplicativo</a></li>
+                <li><a href="Sobre.html" class="nav-link">Sobre</a></li>
+                
+                <!-- Dropdown Social -->
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Social <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/teutransporte"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/kwellaasa/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Faqs.html" class="nav-link">FAQs</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta" id="contactBtn">Contacte-nos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container-modern">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="section-badge">Nossos Serviços</span>
+                <h1 class="hero-title">
+                    Soluções completas para <span class="text-gradient">todas as suas necessidades</span> de mobilidade
+                </h1>
+                <p class="hero-description">
+                    Da boleia partilhada ao transporte empresarial, da logística de cargas ao marketplace agrícola — tudo numa única plataforma
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="quick-nav">
+        <div class="container-modern">
+            <div class="quick-nav-grid" data-aos="fade-up">
+                <a href="#pessoas" class="quick-nav-item">
+                    <i class="fas fa-users"></i>
+                    <span>Para Pessoas</span>
+                </a>
+                <a href="#empresas" class="quick-nav-item">
+                    <i class="fas fa-building"></i>
+                    <span>Para Empresas</span>
+                </a>
+                <a href="#logistica" class="quick-nav-item">
+                    <i class="fas fa-truck"></i>
+                    <span>Logística</span>
+                </a>
+                <a href="#agricultores" class="quick-nav-item">
+                    <i class="fas fa-seedling"></i>
+                    <span>Agricultores</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section class="ecosystem-section">
+        <div class="container-modern">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Ecossistema Kwellaa</span>
+                <h2 class="section-title">Todo o ecossistema conectado</h2>
+                <p class="section-description">
+                    Uma plataforma completa que integra todos os nossos serviços e aplicativos para oferecer a melhor experiência de mobilidade
+                </p>
+            </div>
+            
+            <div class="ecosystem-visual" data-aos="zoom-in">
+                <img src="KwellaSa/assets/KWella-Arvore-G.jpg" alt="Ecossistema Kwellaa - Todos os Apps e Serviços Conectados">
+            </div>
+            
+            <div class="ecosystem-stats" data-aos="fade-up">
+                <div class="eco-stat">
+                    <div class="eco-stat-number">5</div>
+                    <div class="eco-stat-label">Aplicativos</div>
+                </div>
+                <div class="eco-stat">
+                    <div class="eco-stat-number">4</div>
+                    <div class="eco-stat-label">Categorias de Serviços</div>
+                </div>
+                <div class="eco-stat">
+                    <div class="eco-stat-number">1</div>
+                    <div class="eco-stat-label">Plataforma Integrada</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-grid-section">
+        <div class="container-modern">
+            <!-- Para Pessoas -->
+            <div class="services-category" id="pessoas" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div>
+                        <h2 class="category-title">Para Pessoas</h2>
+                        <p class="category-subtitle">Mobilidade urbana inteligente e acessível</p>
+                    </div>
+                </div>
+                
+                <div class="services-cards">
+                    <!-- Wella Táxi -->
+                    <div class="service-detail-card" data-aos="zoom-in" data-aos-delay="0">
+                        <div class="service-card-image">
+                            <img src="KwellaSa/assets/call-V1.png" alt="Wella Táxi">
+                            <div class="service-badge">Premium</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Wella Táxi</h3>
+                            <p>Viaturas novas ou de alto padrão, garantindo conforto, segurança e imagem profissional em cada viagem.</p>
+                            
+                            <div class="features-compact">
+                                <div class="feature-tag"><i class="fas fa-check"></i> Conforto garantido</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Motoristas verificados</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Preços acessíveis</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Monitoramento 24/7</div>
+                            </div>
+                            
+                            <div class="ideal-for">
+                                <strong>Ideal para:</strong>
+                                <p>Executivos, reuniões importantes, quando a imagem e conforto importam</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Boleia Partilhada -->
+                    <div class="service-detail-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="service-card-image">
+                            <img src="KwellaSa/assets/img/servicos/servicos-3.jpg" alt="Boleia Partilhada">
+                            <div class="service-badge eco">Eco</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Wella Boleia Partilhada</h3>
+                            <p>Partilhe viagens no trajeto casa-trabalho ou casa-faculdade, reduzindo drasticamente custos.</p>
+                            
+                            <div class="features-compact">
+                                <div class="feature-tag"><i class="fas fa-check"></i> Economia significativa</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Reduz trânsito</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Sustentável</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Redes seguras</div>
+                            </div>
+                            
+                            <div class="ideal-for">
+                                <strong>Ideal para:</strong>
+                                <p>Profissionais, estudantes, trajetos diários regulares</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- App Motoristas -->
+                    <div class="service-detail-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="service-card-image">
+                            <img src="KwellaSa/assets/img/M.W2.0.png" alt="Wella Driver">
+                            <div class="service-badge driver">Driver</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>App para Motoristas</h3>
+                            <p>Ganhe dinheiro conduzindo com total flexibilidade. Defina seu próprio horário e maximize seus ganhos.</p>
+                            
+                            <div class="features-compact">
+                                <div class="feature-tag"><i class="fas fa-check"></i> Flexibilidade total</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Pagamentos rápidos</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Suporte 24/7</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Sem taxas ocultas</div>
+                            </div>
+                            
+                            <div class="app-download-mini">
+                                <a href="https://play.google.com/store/apps/details?id=com.kwellaa.KwellaDriver">
+                                    <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- App Agentes -->
+                    <div class="service-detail-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="service-card-image">
+                            <img src="KwellaSa/assets/img/M.W1.0.png" alt="Wella Agent">
+                            <div class="service-badge agent">Agent</div>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>App para Agentes</h3>
+                            <p>Ganhe comissões promovendo o Wella. Sem limites para seus ganhos como Agente Wella.</p>
+                            
+                            <div class="features-compact">
+                                <div class="feature-tag"><i class="fas fa-check"></i> Comissões recorrentes</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Trabalhe no seu ritmo</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Dashboard completo</div>
+                                <div class="feature-tag"><i class="fas fa-check"></i> Sem investimento</div>
+                            </div>
+                            
+                            <div class="app-download-mini">
+                                <a href="Agent/Home.html">
+                                    <img src="KwellaSa/assets/img/Wella-Agent-1.0.png" alt="Wella Agent">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Para Empresas -->
+            <div class="services-category" id="empresas" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div>
+                        <h2 class="category-title">Para Empresas</h2>
+                        <p class="category-subtitle">Gestão corporativa digital e eficiente</p>
+                    </div>
+                </div>
+                
+                <div class="enterprise-showcase">
+                    <div class="enterprise-main" data-aos="fade-right">
+                        <img src="KwellaSa/assets/call.-v.png" alt="Wella Empresarial">
+                    </div>
+                    
+                    <div class="enterprise-info" data-aos="fade-left">
+                        <h3>Wella Empresarial</h3>
+                        <p class="lead">Transforme o transporte corporativo numa operação digital, transparente e totalmente controlada.</p>
+                        
+                        <div class="enterprise-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-route"></i>
+                                <div>
+                                    <strong>Gestão Digital Completa</strong>
+                                    <p>Rotas, agendamentos e monitoramento em tempo real</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <i class="fas fa-chart-line"></i>
+                                <div>
+                                    <strong>Relatórios Detalhados</strong>
+                                    <p>Controle de custos, combustível e manutenção</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <div>
+                                    <strong>Segurança e Rastreabilidade</strong>
+                                    <p>Monitoramento 24/7 de todas as operações</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="enterprise-models">
+                            <div class="model-card">
+                                <h4><i class="fas fa-file-contract"></i> Com Contrato Fixo</h4>
+                                <p>Profissionalize sua parceria com visibilidade total e dados concretos</p>
+                            </div>
+                            
+                            <div class="model-card">
+                                <h4><i class="fas fa-hand-holding-usd"></i> Sob Demanda</h4>
+                                <p>Frota virtual certificada, modelo flexível pay-as-you-go</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Para Logística -->
+            <div class="services-category" id="logistica" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <div>
+                        <h2 class="category-title">Para Logística</h2>
+                        <p class="category-subtitle">Transporte de cargas com transparência total</p>
+                    </div>
+                </div>
+                
+                <div class="logistics-showcase">
+                    <div class="logistics-info" data-aos="fade-right">
+                        <h3>Wella Frete</h3>
+                        <p class="lead">Do pacote pequeno à carga pesada, conectamos você ao veículo certo em tempo real.</p>
+                        
+                        <div class="price-highlight">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <strong>Preço Upfront Transparente</strong>
+                                <p>Saiba exatamente quanto vai pagar antes de confirmar</p>
+                            </div>
+                        </div>
+                        
+                        <div class="logistics-features">
+                            <div class="feature-box">
+                                <i class="fas fa-calendar-check"></i>
+                                <strong>Agendamento Flexível</strong>
+                                <p>Na hora ou planejado</p>
+                            </div>
+                            
+                            <div class="feature-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Rastreamento Real-Time</strong>
+                                <p>Acompanhe sua carga</p>
+                            </div>
+                            
+                            <div class="feature-box">
+                                <i class="fas fa-truck-loading"></i>
+                                <strong>Diversos Veículos</strong>
+                                <p>Do leve ao pesado</p>
+                            </div>
+                            
+                            <div class="feature-box">
+                                <i class="fas fa-user-check"></i>
+                                <strong>Motoristas Verificados</strong>
+                                <p>Segurança garantida</p>
+                            </div>
+                        </div>
+                        
+                        <div class="app-download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz">
+                                <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                            </a>
+                            <a href="Wella/Home.html">
+                                <img src="KwellaSa/assets/img/Wella-Web-IOS.2.png" alt="Wella Web">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="logistics-main" data-aos="fade-left">
+                        <img src="KwellaSa/assets/call-11111.png" alt="Wella Frete">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Para Agricultores -->
+            <div class="services-category" id="agricultores" data-aos="fade-up">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div>
+                        <h2 class="category-title">Para Agricultores</h2>
+                        <p class="category-subtitle">Marketplace agrícola com IA integrada</p>
+                    </div>
+                </div>
+                
+                <div class="agro-showcase">
+                    <div class="agro-main" data-aos="fade-right">
+                        <img src="KwellaSa/assets/img/M.1.png" alt="Wella AgroHub">
+                    </div>
+                    
+                    <div class="agro-info" data-aos="fade-left">
+                        <h3>Wella AgroHub</h3>
+                        <p class="lead">Ecossistema digital que conecta produtores, compradores e transportadores numa solução integrada.</p>
+                        
+                        <div class="agro-features-grid">
+                            <div class="agro-feature">
+                                <div class="agro-feature-icon">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                                <h4>Marketplace</h4>
+                                <p>Venda produtos diretamente ao mercado sem intermediários</p>
+                            </div>
+                            
+                            <div class="agro-feature">
+                                <div class="agro-feature-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h4>Compra de Insumos</h4>
+                                <p>Adquira insumos com transparência e melhores preços</p>
+                            </div>
+                            
+                            <div class="agro-feature">
+                                <div class="agro-feature-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <h4>Logística Integrada</h4>
+                                <p>Transporte rastreável da origem ao destino</p>
+                            </div>
+                            
+                            <div class="agro-feature">
+                                <div class="agro-feature-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>IA Integrada</h4>
+                                <p>Extensionista virtual para maximizar produção</p>
+                            </div>
+                        </div>
+                        
+                        <div class="ai-callout">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <strong>Tecnologia de Ponta</strong>
+                                <p>IA que ajuda a prever demanda, reduzir perdas e melhorar o planejamento da produção</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-modern">
+        <div class="container-modern">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Pronto para transformar sua mobilidade?</h2>
+                <p>Baixe o app Wella e experimente todas as nossas soluções</p>
+                <div class="cta-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz" class="btn-modern btn-large btn-white">
+                        <i class="fab fa-google-play"></i>
+                        Baixar Agora
+                    </a>
+                    <a href="Wella/Home.html" class="btn-modern btn-large btn-outline-white">
+                        <i class="fas fa-globe"></i>
+                        Acessar Web
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container-modern">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="KwellaSa/assets/img/hlogo.png" alt="Wella Logo">
+                    <p>O teu transporte, simplificado</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/teutransporte"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kwellaasa/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <a href="Sobre.html">Sobre nós</a>
+                        <a href="Servico.html">Serviços</a>
+                        <a href="Faqs.html">FAQs</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="TermsConditions/Policy.html">Privacidade</a>
+                        <a href="TermsConditions/Index.html">Termos</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <a href="tel:+258871137137"><i class="fas fa-phone"></i> 871 137 137</a>
+                        <a href="tel:+258841371377"><i class="fas fa-phone"></i> 841 371 377</a>
+                        <a href="/cdn-cgi/l/email-protection#d4bdbab2bb94bfa3b1b8b8b5b5fab7bbb9"><i class="fas fa-envelope"></i> <span class="__cf_email__" data-cfemail="eb82858d84ab809c8e87878a8ac5888486">[email&#160;protected]</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kwellaa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+   <div class="modal-overlay" id="contactModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <h3>Entre em Contacto</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-modern btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

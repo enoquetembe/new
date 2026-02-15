@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kwellaa - O teu transporte</title>
+    <link rel="icon" type="image/png" href="public/assets/img/logos/logo_temp.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav" id="mainNav">
+    <nav class="modern-nav" id="mainNav">
         <div class="nav-container">
             <div class="nav-logo">
                 <img src="KwellaSa/assets/img/hlogo.png" alt="Wella Logo">
@@ -25,91 +28,138 @@
             
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Início</a></li>
-                <li><a href="#services" class="nav-link">Serviços</a></li>
+                <li><a href="./servicos.html" class="nav-link">Serviços</a></li>
                 <li><a href="#app" class="nav-link">Aplicativo</a></li>
                 <li><a href="#about" class="nav-link">Sobre</a></li>
-                <li><a href="#contact" class="nav-link nav-link-cta">Contacte-nos</a></li>
+                
+                <!-- Dropdown Social -->
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Social <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/teutransporte"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/kwellaasa/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Faqs.html" class="nav-link">FAQs</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta" id="contactBtn">Contacte-nos</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero-modern" id="home">
         <div class="hero-background">
-            <div class="hero-shapes">
+            <div class="floating-shapes">
                 <div class="shape shape-1"></div>
                 <div class="shape shape-2"></div>
                 <div class="shape shape-3"></div>
             </div>
         </div>
         
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge" data-aos="fade-up">
-                    <span class="badge-icon">🚀</span>
-                    <span>Disponível Agora</span>
-                </div>
-                
-                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                    Mover pessoas e mercadorias 
-                    <span class="text-gradient">nunca foi tão simples</span>
-                </h1>
-                
-                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
-                    Há mais de 6 anos que o app Wella existe para tornar o transporte simples, 
-                    transparente e acessível para todos.
-                </p>
-                
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="10000">0</div>
-                        <div class="stat-label">Utilizadores</div>
+        <div class="container-modern">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-up">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🚀</span>
+                        <span>Disponível Agora</span>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="50000">0</div>
-                        <div class="stat-label">Viagens</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number" data-count="4.8">0</div>
-                        <div class="stat-label">Avaliação</div>
-                    </div>
-                </div>
-                
-                <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
-                    <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz" class="btn btn-primary">
-                        <span>Baixar App</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="Wella/Home.html" class="btn btn-secondary">
-                        Acesso Web
-                    </a>
-                </div>
-            </div>
-            
-            <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
-                <div class="phone-mockup">
-                    <img src="KwellaSa/assets/call.png" alt="Wella App" class="phone-screen">
-                    <div class="floating-card card-1">
-                        <div class="card-icon">🚕</div>
-                        <div class="card-content">
-                            <div class="card-title">Táxi Premium</div>
-                            <div class="card-subtitle">Conforto garantido</div>
+                    
+                    <h1 class="hero-title">
+                        Mover pessoas e mercadorias 
+                        <span class="text-gradient">nunca foi tão simples</span>
+                    </h1>
+                    
+                    <div class="time-counter-wrapper">
+                        <h4 class="time-intro">Há mais de</h4>
+                        <div class="countdown-modern">
+                            <div class="time-box">
+                                <span id="days" class="time-number">02</span>
+                                <small>dias</small>
+                            </div>
+                            <div class="time-box">
+                                <span id="hours" class="time-number">06</span>
+                                <small>horas</small>
+                            </div>
+                            <div class="time-box">
+                                <span id="minutes" class="time-number">15</span>
+                                <small>minutos</small>
+                            </div>
+                            <div class="time-box">
+                                <span id="seconds" class="time-number">48</span>
+                                <small>segundos</small>
+                            </div>
                         </div>
                     </div>
-                    <div class="floating-card card-2">
-                        <div class="card-icon">📦</div>
-                        <div class="card-content">
-                            <div class="card-title">Frete Rápido</div>
-                            <div class="card-subtitle">Entrega segura</div>
+                    
+                    <p class="hero-description">
+                        Que o app Wella existe para tornar isso simples. Requisite um frete quando precisar: 
+                        na hora ou agendado. Saiba exatamente quanto vai pagar antes mesmo de confirmar. 
+                        Sem negociações demoradas e com transparência total, você tem controle sobre teu transporte.
+                    </p>
+                    
+                    <p class="hero-description">
+                        Quando o conforto importa, requisite um táxi personalizado ou escolha uma boleia 
+                        partilhada para economizar. Tudo numa única solução para pessoas, empresas e agricultores.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10000">10K+</div>
+                            <div class="stat-label">Utilizadores</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="50000">50K+</div>
+                            <div class="stat-label">Viagens</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="4.8">4.8</div>
+                            <div class="stat-label">Avaliação</div>
                         </div>
                     </div>
-                    <div class="floating-card card-3">
-                        <div class="card-icon">💰</div>
-                        <div class="card-content">
-                            <div class="card-title">Economia</div>
-                            <div class="card-subtitle">Boleia partilhada</div>
+                    
+                    <div class="hero-cta">
+                        <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz" class="btn-modern btn-primary">
+                            <img src="KwellaSa/assets/WellaLogoRed.png" alt="Wella" width="24" height="24">
+                            <div class="btn-content">
+                                <span class="btn-text-small">Baixar no</span>
+                                <span class="btn-text-large">Google Play</span>
+                            </div>
+                        </a>
+                        <a href="Wella/Home.html" class="btn-modern btn-secondary">
+                            <img src="KwellaSa/assets/WellaLogoRed.png" alt="Wella" width="24" height="24">
+                            <div class="btn-content">
+                                <span class="btn-text-small">Acesse Agora</span>
+                                <span class="btn-text-large">Wella Web</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual" data-aos="fade-left">
+                    <div class="phone-showcase">
+                        <img src="KwellaSa/assets/call.png" alt="Wella App" class="phone-image">
+                        <div class="floating-card card-1">
+                            <div class="card-icon">🚕</div>
+                            <div class="card-text">
+                                <div class="card-title">Táxi Premium</div>
+                                <div class="card-subtitle">Conforto garantido</div>
+                            </div>
+                        </div>
+                        <div class="floating-card card-2">
+                            <div class="card-icon">📦</div>
+                            <div class="card-text">
+                                <div class="card-title">Frete Rápido</div>
+                                <div class="card-subtitle">Entrega segura</div>
+                            </div>
+                        </div>
+                        <div class="floating-card card-3">
+                            <div class="card-icon">💰</div>
+                            <div class="card-text">
+                                <div class="card-title">Economia</div>
+                                <div class="card-subtitle">Boleia partilhada</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -118,8 +168,8 @@
     </section>
 
     <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
+    <section class="services-modern" id="services">
+        <div class="container-modern">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-badge">Serviços</span>
                 <h2 class="section-title">Tudo o que você precisa</h2>
@@ -128,153 +178,628 @@
                 </p>
             </div>
             
-            <div class="services-grid">
-                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M8 24L14 18L20 24L32 12" stroke="#ED1C24" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+            <!-- Tabs Navigation -->
+            <div class="services-tabs" data-aos="fade-up">
+                <button class="tab-button active" data-tab="pessoas">
+                    <i class="fas fa-user"></i>
+                    <span>Para Pessoas</span>
+                </button>
+                <button class="tab-button" data-tab="empresas">
+                    <i class="fas fa-building"></i>
+                    <span>Para Empresas</span>
+                </button>
+                <button class="tab-button" data-tab="logistica">
+                    <i class="fas fa-truck"></i>
+                    <span>Para Logística</span>
+                </button>
+                <button class="tab-button" data-tab="agricultores">
+                    <i class="fas fa-seedling"></i>
+                    <span>Para Agricultores</span>
+                </button>
+            </div>
+            
+            <!-- Tab Content: Para Pessoas -->
+            <div class="tab-content active" id="tab-pessoas">
+                <div class="service-showcase">
+                    <div class="service-image" data-aos="fade-right">
+                        <img src="KwellaSa/assets/call-V1.png" alt="Wella Táxi">
                     </div>
-                    <h3 class="service-title">Wella Táxi</h3>
-                    <p class="service-description">
-                        Viaturas de alto padrão, motoristas verificados e conforto garantido
-                    </p>
-                    <ul class="service-features">
-                        <li>Viaturas novas e bem mantidas</li>
-                        <li>Motoristas profissionais</li>
-                        <li>Rastreamento em tempo real</li>
-                    </ul>
+                    <div class="service-info" data-aos="fade-left">
+                        <h3>Wella Táxi</h3>
+                        <p>
+                            A Wella opera exclusivamente com viaturas novas ou de alto padrão, garantindo 
+                            conforto, segurança e imagem profissional em cada viagem.
+                        </p>
+                        <p>
+                            Mais do que transporte, oferecemos uma experiência confiável, com motoristas 
+                            verificados, veículos bem mantidos, com preços acessíveis e monitoramento em tempo real.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Executivos e profissionais</li>
+                            <li><i class="fas fa-check"></i> Reuniões importantes</li>
+                            <li><i class="fas fa-check"></i> Clientes que valorizam conforto e pontualidade</li>
+                            <li><i class="fas fa-check"></i> Quando a imagem e o conforto importam</li>
+                        </ul>
+                        
+                        <div class="service-divider"></div>
+                        
+                        <h3>Wella Boleia Partilhada</h3>
+                        <p>
+                            A Wella permite que profissionais e estudantes partilhem viagens no trajeto 
+                            casa–trabalho ou casa–faculdade, reduzindo drasticamente o custo diário de transporte.
+                        </p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> O custo individual diminui significativamente</li>
+                            <li><i class="fas fa-check"></i> O trânsito é reduzido</li>
+                            <li><i class="fas fa-check"></i> O rendimento do proprietário do veículo aumenta</li>
+                            <li><i class="fas fa-check"></i> A mobilidade torna-se mais sustentável</li>
+                        </ul>
+                        
+                        <div class="app-download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz">
+                                <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                            </a>
+                            <a href="Wella/Home.html">
+                                <img src="KwellaSa/assets/img/Wella-Web-IOS.2.png" alt="Wella Web">
+                            </a>
+                        </div>
+                        
+                        <div class="service-divider"></div>
+                        
+                        <h3>App para Motoristas</h3>
+                        <p>
+                            Ganhe dinheiro a conduzir com total flexibilidade e liberdade. Com mais de centenas de utilizadores que fazem pedidos constantes de viagens, as oportunidades para ganhar são enormes, especialmente durante períodos de alta procura.
+                        </p>
+                        <p>
+                            Defina o seu próprio horário, conduzindo quando lhe for mais conveniente – durante a semana, ao fim de semana ou à noite.
+                        </p>
+                        
+                        <div class="app-download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.kwellaa.KwellaDriver">
+                                <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                            </a>
+                        </div>
+                        
+                        <div class="service-divider"></div>
+                        
+                        <h3>App para agentes</h3>
+                        <h4 class="agent-subtitle">Não há limite para o quanto você pode ganhar</h4>
+                        <p>
+                            Junte-se a Kwellaa e torne-se Agente Wella e comece a ganhar comissões promovendo o nosso aplicativo.
+                        </p>
+                        <p>
+                            Sua função é simples: divulgar o aplicativo, incentivar clientes a utilizá-lo, e receber comissões por cada corrida realizada.
+                        </p>
+                        <p>
+                            Seus Benefícios: Como Agente Wella, você terá a flexibilidade de trabalhar no seu próprio ritmo, decidindo onde e como promover o aplicativo. Ganhe dinheiro sem parar.
+                        </p>
+                        
+                        <div class="app-download-buttons">
+                            <a href="Agent/Home.html">
+                                <img src="KwellaSa/assets/img/Wella-Agent-1.0.png" alt="Wella Agent">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="8" y="12" width="24" height="16" rx="2" stroke="#ED1C24" stroke-width="3"/>
-                            <path d="M12 12V8C12 6.89543 12.8954 6 14 6H26C27.1046 6 28 6.89543 28 8V12" stroke="#ED1C24" stroke-width="3"/>
-                        </svg>
+            </div>
+            
+            <!-- Tab Content: Para Empresas -->
+            <div class="tab-content" id="tab-empresas">
+                <div class="service-showcase reverse">
+                    <div class="service-image" data-aos="fade-left">
+                        <img src="KwellaSa/assets/call.-v.png" alt="Wella Empresarial">
                     </div>
-                    <h3 class="service-title">Wella Frete</h3>
-                    <p class="service-description">
-                        Transporte de carga com preço transparente e entrega segura
-                    </p>
-                    <ul class="service-features">
-                        <li>Preço upfront antes de confirmar</li>
-                        <li>Diversos tipos de veículos</li>
-                        <li>Agendamento flexível</li>
-                    </ul>
+                    <div class="service-info" data-aos="fade-right">
+                        <h3>Wella Empresarial</h3>
+                        <p>
+                            O Wella Empresarial transforma o transporte corporativo de pessoas e cargas 
+                            numa operação digital, transparente e totalmente controlada.
+                        </p>
+                        <p>
+                            Não importa se a sua empresa tem contrato fixo ou precisa de transporte sob 
+                            demanda — a Wella oferece estrutura, rastreabilidade e performance.
+                        </p>
+                        
+                        <h4>Com a nossa plataforma, a empresa passa a ter:</h4>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Gestão digital completa de rotas e agendamentos</li>
+                            <li><i class="fas fa-check"></i> Monitoramento em tempo real de todas as viagens</li>
+                            <li><i class="fas fa-check"></i> Registo automático de custos operacionais</li>
+                            <li><i class="fas fa-check"></i> Controlo de combustível e manutenção</li>
+                            <li><i class="fas fa-check"></i> Relatórios claros para auditoria e tomada de decisão</li>
+                        </ul>
+                        
+                        <div class="enterprise-options">
+                            <div class="option-box">
+                                <h5><i class="fas fa-file-contract"></i> Para Empresas com Contrato Fixo</h5>
+                                <p>A Wella não substitui o seu contrato — ela profissionaliza e fortalece a parceria.</p>
+                                <ul>
+                                    <li>Visibilidade total das operações</li>
+                                    <li>Alertas em tempo real sobre desvios</li>
+                                    <li>Integração com GPS existente</li>
+                                    <li>Dados concretos para avaliar desempenho</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="option-box">
+                                <h5><i class="fas fa-hand-holding-usd"></i> Para Empresas Sem Contrato Fixo</h5>
+                                <p>Pool qualificado de veículos sob demanda, modelo flexível e pay-as-you-go.</p>
+                                <ul>
+                                    <li>Frota virtual certificada</li>
+                                    <li>Faturamento mensal organizado</li>
+                                    <li>Escolha do nível de segurança</li>
+                                    <li>Escalabilidade conforme necessidade</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <circle cx="14" cy="20" r="6" stroke="#ED1C24" stroke-width="3"/>
-                            <circle cx="26" cy="20" r="6" stroke="#ED1C24" stroke-width="3"/>
-                        </svg>
+            </div>
+            
+            <!-- Tab Content: Para Logística -->
+            <div class="tab-content" id="tab-logistica">
+                <div class="service-showcase">
+                    <div class="service-image" data-aos="fade-right">
+                        <img src="KwellaSa/assets/call-11111.png" alt="Wella Frete">
                     </div>
-                    <h3 class="service-title">Boleia Partilhada</h3>
-                    <p class="service-description">
-                        Reduza custos partilhando viagens com outros passageiros
-                    </p>
-                    <ul class="service-features">
-                        <li>Custo individual reduzido</li>
-                        <li>Mobilidade sustentável</li>
-                        <li>Rotas otimizadas</li>
-                    </ul>
+                    <div class="service-info" data-aos="fade-left">
+                        <h3>Wella Frete</h3>
+                        <p>
+                            Transporte sua carga com facilidade, a qualquer hora e em qualquer lugar. 
+                            Seja um pacote pequeno ou uma carga pesada, nosso aplicativo conecta você 
+                            ao veículo certo em tempo real ou agende quando precisar.
+                        </p>
+                        <p>
+                            Desde mudanças residenciais até o transporte de materiais de construção ou 
+                            cargas especiais, a Wella garante uma solução segura, prática e confiável.
+                        </p>
+                        
+                        <div class="highlight-box">
+                            <i class="fas fa-dollar-sign"></i>
+                            <strong>Saiba exatamente quanto vai pagar antes mesmo de confirmar.</strong>
+                        </div>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Preço transparente upfront</li>
+                            <li><i class="fas fa-check"></i> Diversos tipos de veículos disponíveis</li>
+                            <li><i class="fas fa-check"></i> Agendamento na hora ou planejado</li>
+                            <li><i class="fas fa-check"></i> Rastreamento em tempo real</li>
+                            <li><i class="fas fa-check"></i> Motoristas verificados</li>
+                        </ul>
+                        
+                        <div class="app-download-buttons">
+                            <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz">
+                                <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                            </a>
+                            <a href="Wella/Home.html">
+                                <img src="KwellaSa/assets/img/Wella-Web-IOS.2.png" alt="Wella Web">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M8 20H32M8 20C8 14.4772 12.4772 10 18 10H22C27.5228 10 32 14.4772 32 20M8 20C8 25.5228 12.4772 30 18 30H22C27.5228 30 32 25.5228 32 20" stroke="#ED1C24" stroke-width="3"/>
-                        </svg>
+            </div>
+            
+            <!-- Tab Content: Para Agricultores -->
+            <div class="tab-content" id="tab-agricultores">
+                <div class="service-showcase reverse">
+                    <div class="service-image" data-aos="fade-left">
+                        <img src="KwellaSa/assets/img/M.1.png" alt="Wella AgroHub">
                     </div>
-                    <h3 class="service-title">Wella Empresarial</h3>
-                    <p class="service-description">
-                        Gestão completa de transporte corporativo
-                    </p>
-                    <ul class="service-features">
-                        <li>Controle total de frotas</li>
-                        <li>Relatórios detalhados</li>
-                        <li>Gestão de custos</li>
-                    </ul>
+                    <div class="service-info" data-aos="fade-right">
+                        <h3>Wella AgroHub</h3>
+                        <p>
+                            O Wella AgroHub é um ecossistema digital que conecta produtores, compradores 
+                            e transportadores em uma solução integrada de logística e marketplace agrícola.
+                        </p>
+                        
+                        <h4>Através da plataforma, agricultores podem:</h4>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Vender seus produtos diretamente ao mercado</li>
+                            <li><i class="fas fa-check"></i> Comprar insumos agrícolas com mais transparência</li>
+                            <li><i class="fas fa-check"></i> Solicitar transporte de forma simples e rastreável</li>
+                        </ul>
+                        
+                        <h4>Para compradores e agroindústrias, o AgroHub garante:</h4>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> Fornecimento mais organizado e confiável</li>
+                            <li><i class="fas fa-check"></i> Rastreabilidade da origem ao destino</li>
+                            <li><i class="fas fa-check"></i> Redução de risco logístico</li>
+                        </ul>
+                        
+                        <div class="ai-box">
+                            <i class="fas fa-brain"></i>
+                            <div>
+                                <h5>Inteligência Artificial Integrada</h5>
+                                <p>Com apoio de IA, o sistema ajuda a prever demanda, reduzir perdas 
+                                pós-colheita e melhorar o planeamento da produção. O agricultor beneficia-se 
+                                de um extensionista virtual e pessoal para maximizar a produção.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
-        <div class="container">
-            <div class="features-content">
-                <div class="features-text" data-aos="fade-right">
-                    <span class="section-badge">Diferenciais</span>
-                    <h2 class="section-title">Por que escolher Wella?</h2>
-                    
-                    <div class="feature-list">
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-content">
-                                <h3>Preço Transparente</h3>
-                                <p>Saiba exatamente quanto vai pagar antes de confirmar</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-content">
-                                <h3>Sem Negociações</h3>
-                                <p>Transparência total, sem surpresas no destino</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-content">
-                                <h3>Rastreamento em Tempo Real</h3>
-                                <p>Acompanhe sua viagem ou carga a qualquer momento</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">✓</div>
-                            <div class="feature-content">
-                                <h3>Multi-Serviço</h3>
-                                <p>Táxi, frete, boleia e empresarial numa única plataforma</p>
-                            </div>
-                        </div>
+    <!-- Diferencial Wella -->
+    <section class="differentials-section">
+        <div class="container-modern">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Diferenciais</span>
+                <h2 class="section-title">Por que escolher Wella?</h2>
+            </div>
+            
+            <div class="differentials-grid">
+                <div class="differential-card" data-aos="fade-up" data-aos-delay="0">
+                    <div class="diff-icon">
+                        <i class="fas fa-dollar-sign"></i>
                     </div>
+                    <h4>Preço Upfront</h4>
+                    <p>Saiba exatamente quanto vai pagar para seu frete antes de confirmar</p>
                 </div>
                 
-                <div class="features-visual" data-aos="fade-left">
-                    <img src="KwellaSa/assets/24.png" alt="Features" class="features-image">
+                <div class="differential-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="diff-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4>Sem Negociação</h4>
+                    <p>Transparência total, sem surpresas no destino</p>
+                </div>
+                
+                <div class="differential-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="diff-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h4>Cargas de Retorno</h4>
+                    <p>Logística inteligente que reduz custos e evita viagens vazias</p>
+                </div>
+                
+                <div class="differential-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="diff-icon">
+                        <i class="fas fa-th-large"></i>
+                    </div>
+                    <h4>Multi-Serviço</h4>
+                    <p>Táxi, boleia paga, frete, empresarial e AgroHub numa única plataforma</p>
+                </div>
+                
+                <div class="differential-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="diff-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h4>IA Integrada</h4>
+                    <p>Tecnologia de apoio ao agricultor</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- App Section -->
-    <section class="app-section" id="app">
-        <div class="container">
-            <div class="app-content">
-                <div class="app-visual" data-aos="fade-right">
-                    <img src="KwellaSa/assets/call-V1.png" alt="Wella App">
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container-modern">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <span class="section-badge">Sobre Nós</span>
+                    <h2 class="section-title">Nossa História</h2>
+                    <p>
+                        Fundada em 2018, a Kwellaa iniciou suas operações na área de transporte de 
+                        pessoal e boleia compartilhada, marcando seu início no setor de transporte em Moçambique.
+                    </p>
+                    <p>
+                        Destaque na revista DW África, a Kwellaa recebeu reconhecimento pela sua inovação 
+                        e contribuição para o transporte no continente.
+                    </p>
+                    <p>
+                        Em 2025, a Kwellaa lançou o aplicativo "Wella", revolucionando o transporte de 
+                        pessoas e mercadorias em tempo real com preço upfront em Moçambique.
+                    </p>
+                    <a href="Sobre.html" class="btn-modern btn-outline">Saber mais</a>
                 </div>
                 
-                <div class="app-text" data-aos="fade-left">
-                    <span class="section-badge">Aplicativo</span>
-                    <h2 class="section-title">Baixe o app Wella</h2>
-                    <p class="section-description">
-                        Disponível para Android e acesso via web. Experiência completa 
-                        na palma da sua mão.
-                    </p>
-                    
-                    <div class="app-downloads">
-                        <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz" class="download-btn">
-                            <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
-                        </a>
-                        <a href="Wella/Home.html" class="download-btn">
-                            <img src="KwellaSa/assets/img/Wella-Web-IOS.2.png" alt="Wella Web">
-                        </a>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="KwellaSa/assets/img/kwellaalogo.png" alt="Kwellaa">
+                    <div class="about-quote">
+                        <i class="fas fa-quote-left"></i>
+                        <p>"Iniciativa inovadora e líder no setor da mobilidade urbana e logística!"</p>
+                        <cite>— DW Africa</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como usar o Wella Section -->
+    <section class="how-to-use-section" id="app">
+        <div class="container-modern">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-badge">Guia de Uso</span>
+                <h2 class="section-title">Como usar o Wella?</h2>
+            </div>
+            
+            <!-- Tabs Navigation -->
+            <div class="how-to-tabs" data-aos="fade-up">
+                <button class="how-to-tab-button active" data-howtab="wella-app">
+                    <span>Wella</span>
+                </button>
+                <button class="how-to-tab-button" data-howtab="driver-app">
+                    <span>Wella-Driver</span>
+                </button>
+                <button class="how-to-tab-button" data-howtab="business-app">
+                    <span>Wella-Business</span>
+                </button>
+                <button class="how-to-tab-button" data-howtab="agent-app">
+                    <span>Wella-Agentes</span>
+                </button>
+                <button class="how-to-tab-button" data-howtab="agro-app">
+                    <span>Wella-AgroHub</span>
+                </button>
+            </div>
+            
+            <!-- Wella App -->
+            <div class="how-to-content active" id="howtab-wella-app">
+                <div class="how-to-card" data-aos="zoom-in">
+                    <div class="how-to-grid">
+                        <div class="how-to-steps">
+                            <h3>Como Funciona?</h3>
+                            <p class="subtitle">Sua mobilidade e logística inteligente começa aqui</p>
+                            <p>Com a nossa plataforma, transportar pessoas e cargas ficou simples, rápido e seguro:</p>
+                            
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Cadastre-se na plataforma</h4>
+                                        <p>Crie sua conta de forma rápida e comece a solicitar transporte para pessoas ou envio de cargas.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Indique o destino</h4>
+                                        <p>Insira o local de partida e destino, seja para deslocamento pessoal ou transporte de mercadorias.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Escolha o veículo ideal</h4>
+                                        <p>De carros para transporte de passageiros a vans e caminhões para cargas — selecione a melhor opção para sua necessidade e faça sua reserva em poucos passos.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Acompanhe e gerencie tudo em tempo real</h4>
+                                        <p>Monitore sua viagem ou entrega diretamente pelo aplicativo e pague com dinheiro, carteira digital (M-Pesa), cartão de crédito ou débito.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="app-download-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz">
+                                    <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                                </a>
+                                <a href="Wella/Home.html">
+                                    <img src="KwellaSa/assets/img/Wella-Web-IOS.2.png" alt="Wella Web">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="how-to-image">
+                            <img src="KwellaSa/assets/Wella-Agente-Call-App-1.png" alt="Wella App">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wella Driver -->
+            <div class="how-to-content" id="howtab-driver-app">
+                <div class="how-to-card" data-aos="zoom-in">
+                    <div class="how-to-grid">
+                        <div class="how-to-steps">
+                            <h3>Como Funciona?</h3>
+                            <p class="subtitle">Simples, confiável e feito para você ganhar quando quiser</p>
+                            
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Receba e aceite solicitações automaticamente</h4>
+                                        <p>O aplicativo encontra pedidos de transporte de passageiros ou entregas de cargas próximos de si.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Vá até o ponto de recolha</h4>
+                                        <p>O app mostra a localização exata do passageiro ou da carga e orienta você pelo melhor trajeto.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Realize a viagem ou entrega com segurança</h4>
+                                        <p>Siga as direções até ao destino indicado e acompanhe todas as informações da viagem.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Continue online e aumente seus ganhos</h4>
+                                        <p>Aceite novas solicitações ou fique offline quando quiser — você tem total controle da sua rotina.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="app-download-buttons">
+                                <a href="https://play.google.com/store/apps/details?id=com.kwellaa.KwellaDriver">
+                                    <img src="KwellaSa/assets/img/google-play-badge.svg" alt="Google Play">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="how-to-image">
+                            <img src="KwellaSa/assets/img/M.W2.0.png" alt="Wella Driver">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wella Business -->
+            <div class="how-to-content" id="howtab-business-app">
+                <div class="how-to-card" data-aos="zoom-in">
+                    <div class="how-to-grid">
+                        <div class="how-to-steps">
+                            <h3>Como Funciona?</h3>
+                            <p class="subtitle">Gestão inteligente de transporte corporativo de pessoas e cargas, tudo numa única plataforma</p>
+                            
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Crie sua conta empresarial</h4>
+                                        <p>Cadastre a empresa e configure usuários com acesso seguro ao sistema.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Defina como pretende operar</h4>
+                                        <p>Utilize transportadoras com contrato fixo ou solicite veículos sob demanda sempre que precisar.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Solicite e gerencie transportes</h4>
+                                        <p>Crie requisições, atribua motoristas e acompanhe viagens e entregas em tempo real.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Controle custos e desempenho</h4>
+                                        <p>Gerencie pagamentos, relatórios operacionais e histórico completo das operações.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="how-to-image">
+                            <img src="KwellaSa/assets/11111.png" alt="Wella Business">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wella Agentes -->
+            <div class="how-to-content" id="howtab-agent-app">
+                <div class="how-to-card" data-aos="zoom-in">
+                    <div class="how-to-grid">
+                        <div class="how-to-steps">
+                            <h3>Como Funciona?</h3>
+                            <p class="subtitle">Não há limites para o quanto você pode ganhar como Agente Wella</p>
+                            
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Torne-se um Agente Wella</h4>
+                                        <p>Registe-se junto à Wella e receba acesso à sua conta de agente.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Promova o aplicativo</h4>
+                                        <p>Divulgue a Wella nas redes sociais, empresas, estabelecimentos comerciais e na sua rede de contactos.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Indique clientes, motoristas e empresas</h4>
+                                        <p>Ajude passageiros, empresas e transportadoras a utilizar a Wella para mobilidade e transporte de cargas.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Acompanhe indicações e receba comissões</h4>
+                                        <p>Monitore suas recomendações através da sua conta de agente e ganhe comissões por cada serviço realizado na plataforma.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="app-download-buttons">
+                                <a href="Agent/Home.html">
+                                    <img src="KwellaSa/assets/img/Wella-Agent-1.0.png" alt="Wella Agent">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="how-to-image">
+                            <img src="KwellaSa/assets/img/M.W1.0.png" alt="Wella Agent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Wella AgroHub -->
+            <div class="how-to-content" id="howtab-agro-app">
+                <div class="how-to-card" data-aos="zoom-in">
+                    <div class="how-to-grid">
+                        <div class="how-to-steps">
+                            <h3>Como Funciona?</h3>
+                            <p class="subtitle">Com o WAH (Wella-AgroHub) você pode se tornar um comprador, vendedor ou agricultor</p>
+                            
+                            <div class="step-list">
+                                <div class="step-item">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Torne-se um comprador</h4>
+                                        <p>Registe-se junto ao WAH e explore os produtos disponíveis para a comercialização.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Torne-se um vendedor</h4>
+                                        <p>Dirija-se ao perfil e escolha a opção "Tornar-se um vendedor". Complete a submissão da documentação para comercializar e confirme a identidade através da funcionalidade KYC. Publique os seus produtos e comece a vender.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="step-item">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Torne-se um agricultor</h4>
+                                        <p>Dirija-se ao perfil e escolha a opção "Tornar-se um agricultor". Complete a submissão da documentação e confirme a identidade através da funcionalidade KYC. Gerencie áreas de produção, adicione culturas, animais e explore o seu extensionista virtual que o ajudará a maximizar a sua produção. Publique os seus produtos e comece a vender.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="app-download-buttons">
+                                <a href="Agent/Home.html">
+                                    <img src="KwellaSa/assets/img/Wella-Agent-1.0.png" alt="Wella AgroHub">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="how-to-image">
+                            <img src="KwellaSa/assets/img/M.W1.0.png" alt="Wella AgroHub">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,32 +807,33 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
+    <section class="cta-modern">
+        <div class="container-modern">
             <div class="cta-content" data-aos="zoom-in">
-                <h2 class="cta-title">
-                    Junte-se à comunidade Wella
-                </h2>
-                <p class="cta-description">
-                    Revolucione a forma como você transporta cargas e pessoas
-                </p>
-                <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz" class="btn btn-primary btn-large">
-                    <span>Começar Agora</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </a>
+                <h2>Junte-se à comunidade Wella</h2>
+                <p>Revolucione a forma como você transporta cargas e pessoas!</p>
+                <div class="cta-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.kwellaa.mz" class="btn-modern btn-large btn-white">
+                        <i class="fab fa-google-play"></i>
+                        Começar Agora
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
+    <footer class="footer-modern">
+        <div class="container-modern">
+            <div class="footer-grid">
                 <div class="footer-brand">
                     <img src="KwellaSa/assets/img/hlogo.png" alt="Wella Logo">
                     <p>O teu transporte, simplificado</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/teutransporte"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kwellaasa/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
@@ -326,36 +852,48 @@
                     
                     <div class="footer-column">
                         <h4>Contacto</h4>
-                        <a href="tel:+258871137137">871 137 137</a>
-                        <a href="tel:+258841371377">841 371 377</a>
-                        <a href="mailto:info@kwellaa.com">info@kwellaa.com</a>
+                        <a href="tel:+258871137137"><i class="fas fa-phone"></i> 871 137 137</a>
+                        <a href="tel:+258841371377"><i class="fas fa-phone"></i> 841 371 377</a>
+                        <a href="/cdn-cgi/l/email-protection#6801060e0728031f0d04040909460b0705"><i class="fas fa-envelope"></i> <span class="__cf_email__" data-cfemail="335a5d555c735844565f5f52521d505c5e">[email&#160;protected]</span></a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <p>&copy; 2024 Kwellaa. Todos os direitos reservados.</p>
-                <div class="footer-social">
-                    <a href="https://www.facebook.com/teutransporte" aria-label="Facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.378 14.192 5 15.115 5H18V0h-3.808C10.596 0 9 1.583 9 4.615V8z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/kwellaasa/" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/>
-                        </svg>
-                    </a>
-                </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/index.js"></script>
+     <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <h3>Entre em Contacto</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-modern btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
 </body>
 </html>
