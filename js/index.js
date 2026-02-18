@@ -603,3 +603,73 @@ class KwellaaApp {
 // ==========================================
 
 new KwellaaApp();
+
+// ========================================
+// SERVICE ACCORDION FUNCTIONALITY
+// Add to existing index.js
+// ========================================
+
+class ServiceAccordion {
+    constructor() {
+        this.accordionItems = document.querySelectorAll('.accordion-item');
+        this.accordionHeaders = document.querySelectorAll('.accordion-header');
+        this.serviceImage = document.getElementById('pessoas-image');
+        this.init();
+    }
+
+    init() {
+        if (this.accordionHeaders.length === 0) return;
+
+        this.accordionHeaders.forEach((header, index) => {
+            header.addEventListener('click', () => {
+                this.toggleAccordion(index);
+            });
+        });
+
+        // Open first item by default
+        if (this.accordionItems.length > 0) {
+            this.accordionItems[0].classList.add('active');
+        }
+    }
+
+    toggleAccordion(index) {
+        const clickedItem = this.accordionItems[index];
+        const clickedHeader = this.accordionHeaders[index];
+        const isActive = clickedItem.classList.contains('active');
+
+        // Close all items
+        this.accordionItems.forEach(item => {
+            item.classList.remove('active');
+        });
+
+        // Open clicked item if it wasn't active
+        if (!isActive) {
+            clickedItem.classList.add('active');
+            
+            // Change image if service image exists
+            const newImageSrc = clickedHeader.getAttribute('data-image');
+            if (this.serviceImage && newImageSrc) {
+                this.changeImage(newImageSrc);
+            }
+        }
+    }
+
+    changeImage(newSrc) {
+        // Smooth fade transition
+        this.serviceImage.style.opacity = '0';
+        
+        setTimeout(() => {
+            this.serviceImage.src = newSrc;
+            this.serviceImage.style.opacity = '1';
+        }, 300);
+    }
+}
+
+// Initialize ServiceAccordion when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    new ServiceAccordion();
+});
+
+// Or add to existing KwellaaApp class:
+// In the initializeComponents() method, add:
+// new ServiceAccordion();

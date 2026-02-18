@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Kwellaa</title>
+    <link rel="icon" type="image/png" href="public/assets/img/logos/logo_temp.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/faqs.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="modern-nav" id="mainNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="KwellaSa/assets/img/hlogo.png" alt="Wella Logo">
+                </a>
+            </div>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+                <li><a href="index.html#app" class="nav-link">Aplicativo</a></li>
+                <li><a href="Sobre.html" class="nav-link">Sobre</a></li>
+                
+                <!-- Dropdown Social -->
+                <li class="nav-dropdown">
+                    <a href="#" class="nav-link">Social <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="https://www.facebook.com/teutransporte"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://www.instagram.com/kwellaasa/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="Faqs.html" class="nav-link active">FAQs</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta" id="contactBtn">Contacte-nos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="faqs-hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        
+        <div class="container-modern">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="section-badge">Perguntas Frequentes</span>
+                <h1 class="hero-title">
+                    Como podemos <span class="text-gradient">ajudar você?</span>
+                </h1>
+                <p class="hero-description">
+                    Encontre respostas rápidas para as perguntas mais comuns sobre o Wella
+                </p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs-section">
+        <div class="container-modern">
+            <!-- Category Filters -->
+            <div class="faq-categories" data-aos="fade-up">
+                <button class="category-btn active" data-category="all">
+                    <i class="fas fa-th"></i>
+                    Todas
+                </button>
+                <button class="category-btn" data-category="geral">
+                    <i class="fas fa-question-circle"></i>
+                    Geral
+                </button>
+                <button class="category-btn" data-category="pagamento">
+                    <i class="fas fa-credit-card"></i>
+                    Pagamento
+                </button>
+                <button class="category-btn" data-category="motorista">
+                    <i class="fas fa-car"></i>
+                    Motoristas
+                </button>
+                <button class="category-btn" data-category="seguranca">
+                    <i class="fas fa-shield-alt"></i>
+                    Segurança
+                </button>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="faq-accordion" data-aos="fade-up">
+                <!-- General Questions -->
+                <div class="faq-item" data-category="geral" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como posso reservar um veículo através do aplicativo Wella?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>É simples! Basta baixar o aplicativo Wella ou acessar através do Wella Web, inserir o destino da sua carga, escolher um veículo da nossa frota confiável, e confirmar a reserva. Você também pode acompanhar sua carga em tempo real pelo app.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="geral" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        <span>Quais tipos de veículos estão disponíveis para reserva?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O Wella oferece uma ampla gama de veículos, desde vans pequenas até grandes caminhões, para atender todas as suas necessidades de transporte, independentemente do tamanho da carga.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="geral" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>Como sei qual veículo escolher para minha carga?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você pode explorar as opções disponíveis para encontrar o veículo ideal para sua carga. O aplicativo mostra as especificações de cada tipo de veículo, incluindo capacidade de carga e dimensões.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="geral" data-aos="fade-up" data-aos-delay="150">
+                    <button class="faq-question">
+                        <span>Existe um peso mínimo para reserva?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não, não há peso mínimo. Seja uma parcela pequena ou uma carga completa, temos um veículo para cada necessidade.</p>
+                    </div>
+                </div>
+
+                <!-- Payment Questions -->
+                <div class="faq-item" data-category="pagamento" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como é calculado o preço do transporte?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>O preço é calculado com base na distância, tipo de carga, e o tipo de veículo escolhido. Garantimos total transparência, então o que você vê no app é o que você paga – sem taxas ocultas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="pagamento" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        <span>Quais formas de pagamento são aceitas?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceitamos diversas formas de pagamento: dinheiro, M-Pesa, cartão de crédito e débito. Escolha a opção mais conveniente para você no momento do pagamento.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="pagamento" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>O que acontece se eu precisar cancelar minha reserva?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você pode cancelar sua reserva diretamente pelo aplicativo. Consulte nossa política de cancelamento para mais detalhes sobre prazos e possíveis cobranças.</p>
+                    </div>
+                </div>
+
+                <!-- Driver Questions -->
+                <div class="faq-item" data-category="motorista" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como me torno um motorista Wella?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Baixe o app Wella Driver, complete o cadastro com seus documentos, passe pela verificação e comece a aceitar corridas. É simples e você define seu próprio horário!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="motorista" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        <span>Quais documentos preciso para ser motorista?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Você precisará de: carta de condução válida, documentos do veículo (DUCAR), seguro do veículo atualizado, documento de identificação (BI/Passaporte) e comprovante de residência.</p>
+                    </div>
+                </div>
+
+                <!-- Security Questions -->
+                <div class="faq-item" data-category="seguranca" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>É seguro usar o Wella?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutamente! Nós realizamos verificações rigorosas de antecedentes dos motoristas e inspeções regulares dos veículos para garantir a segurança e confiabilidade dos nossos serviços.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="seguranca" data-aos="fade-up" data-aos-delay="50">
+                    <button class="faq-question">
+                        <span>Posso rastrear minha carga durante o transporte?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Nosso aplicativo oferece rastreamento em tempo real, para que você saiba exatamente onde sua carga está em qualquer momento.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="seguranca" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span>O que faço em caso de emergência durante a viagem?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Entre em contacto imediatamente com nosso suporte 24/7 através do app ou ligue para 871 137 137. Temos uma equipe dedicada pronta para ajudar em qualquer situação.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="faq-cta">
+        <div class="container-modern">
+            <div class="cta-box" data-aos="zoom-in">
+                <div class="cta-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div class="cta-content">
+                    <h3>Ainda tem dúvidas?</h3>
+                    <p>Nossa equipe está pronta para ajudar você!</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn-modern btn-primary" id="contactCta">
+                        <i class="fas fa-envelope"></i>
+                        Entre em Contacto
+                    </a>
+                    <a href="tel:+258871137137" class="btn-modern btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Ligar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-modern">
+        <div class="container-modern">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="KwellaSa/assets/img/hlogo.png" alt="Wella Logo">
+                    <p>O teu transporte, simplificado</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/teutransporte"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kwellaasa/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kwellaa-sa-033b8a20b/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Empresa</h4>
+                        <a href="Sobre.html">Sobre nós</a>
+                        <a href="servicos.html">Serviços</a>
+                        <a href="Faqs.html">FAQs</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="TermsConditions/Policy.html">Privacidade</a>
+                        <a href="TermsConditions/Index.html">Termos</a>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contacto</h4>
+                        <a href="tel:+258871137137"><i class="fas fa-phone"></i> 871 137 137</a>
+                        <a href="tel:+258841371377"><i class="fas fa-phone"></i> 841 371 377</a>
+                        <a href="mailto:info@kwellaa.com"><i class="fas fa-envelope"></i> info@kwellaa.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kwellaa. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <h3>Entre em Contacto</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-modern btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/faqs.js"></script>
+</body>
+</html>

@@ -131,12 +131,19 @@
     width: 100%;
     margin: 60px 0;
     overflow: hidden;
+    transform: scale(1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #c8161e;
+    padding: 5rem 0;
 }
 
 .ecosystem-visual-fullwidth img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform var(--duration-slow) var(--ease-smooth);
 }
 
@@ -720,6 +727,11 @@
 }
 
 @media (max-width: 576px) {
+
+    .ecosystem-visual-fullwidth img {
+    width: fit-content;
+
+    }
     .quick-nav-grid {
         grid-template-columns: 1fr;
     }

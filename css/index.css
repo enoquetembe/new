@@ -11,7 +11,7 @@
     --dark: #0F172A;
     --dark-light: #1E293B;
     --dark-blue: #0c0049;
-    --gray: #64748B;
+    --gray: #22272e;
     --gray-light: #CBD5E1;
     --gray-lighter: #F1F5F9;
     --white: #FFFFFF;
@@ -104,7 +104,7 @@ a {
 }
 
 .nav-logo img {
-    height: 50px;
+    height: 2rem;
     width: auto;
     transition: transform var(--duration-normal) var(--ease-smooth);
 }
@@ -378,7 +378,7 @@ a {
 .time-intro {
     font-size: 24px;
     font-weight: 700;
-    color: var(--dark-blue);
+    color: var(--dark);
     font-style: italic;
     margin-bottom: 12px;
 }
@@ -421,7 +421,7 @@ a {
 
 .hero-description {
     font-size: 16px;
-    color: var(--dark-blue);
+    color: var(--dark);
     line-height: 1.8;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -770,7 +770,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center;
+    align-items: start;
     margin-bottom: 80px;
 }
 
@@ -783,7 +783,7 @@ a {
 }
 
 .service-image img {
-    width: 100%;
+    width: 70%;
     max-width: 500px;
     margin: 0 auto;
     border-radius: 24px;
@@ -1235,7 +1235,7 @@ a {
 }
 
 .about-image img {
-    width: 100%;
+    width: 40%;
     max-width: 400px;
     margin: 0 auto;
 }
@@ -1335,7 +1335,7 @@ a {
 }
 
 .footer-brand img {
-    height: 50px;
+    height: 2.2rem;
     margin-bottom: 20px;
 }
 
@@ -1686,5 +1686,135 @@ a {
     
     .modal-content {
         padding: 60px 24px 24px;
+    }
+}
+
+/* ================================
+   ACCORDION STYLES FOR PARA PESSOAS
+   Add to existing index.css
+   ================================ */
+
+/* Service Accordion Container */
+.service-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Accordion Item */
+.accordion-item {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.accordion-item:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+}
+
+.accordion-item.active {
+    border-color: none;
+ 
+}
+
+/* Accordion Header (Button) */
+.accordion-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: all var(--duration-normal) var(--ease-smooth);
+}
+
+.accordion-header:hover {
+    background: rgba(237, 28, 36, 0.05);
+}
+
+
+.accordion-header h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--dark);
+    margin: 0;
+    transition: color var(--duration-normal) var(--ease-smooth);
+}
+
+.accordion-item.active .accordion-header h3 {
+    color: var(--primary);
+}
+
+.accordion-header i {
+    font-size: 20px;
+    color: var(--primary);
+    transition: transform var(--duration-normal) var(--ease-smooth);
+    flex-shrink: 0;
+    margin-left: 16px;
+}
+
+.accordion-item.active .accordion-header i {
+    transform: rotate(180deg);
+}
+
+/* Accordion Content */
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--duration-slow) var(--ease-smooth);
+}
+
+.accordion-item.active .accordion-content {
+    max-height: 2000px;
+}
+
+.accordion-content > * {
+    padding: 0 24px;
+}
+
+.accordion-content > *:first-child {
+    padding-top: 0;
+}
+
+.accordion-content > *:last-child {
+    padding-bottom: 24px;
+}
+
+.accordion-content p {
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.accordion-content .feature-list {
+    margin: 20px 24px;
+}
+
+.accordion-content .app-download-buttons {
+    margin: 24px 24px 0;
+}
+
+/* Responsive Accordion */
+@media (max-width: 768px) {
+    .accordion-header {
+        padding: 16px 20px;
+    }
+    
+    .accordion-header h3 {
+        font-size: 18px;
+    }
+    
+    .accordion-content > * {
+        padding: 0 20px;
+    }
+    
+    .accordion-content > *:last-child {
+        padding-bottom: 20px;
     }
 }
