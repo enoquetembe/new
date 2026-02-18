@@ -109,15 +109,13 @@ class Navigation {
 }
 
 // ==========================================
-// 2. COUNTDOWN TIMER
+// 2. COUNTUP TIMER (TEMPO DECORRIDO)
 // ==========================================
 
-class CountdownTimer {
+class CountupTimer {
     constructor() {
-        // Calculate launch date: 6 years ago from February 15, 2026
-        const launchDate = new Date('2019-02-13T10:02:53Z');
-        const now = new Date();
-        this.targetDate = new Date(launchDate.getTime() + (now - launchDate));
+        // Data de referência: 18 de abril de 2025 (como no código antigo)
+        this.startDate = new Date("April 18, 2025 00:00:00").getTime();
         
         this.elements = {
             days: document.getElementById('days'),
@@ -131,13 +129,22 @@ class CountdownTimer {
 
     init() {
         if (!this.elements.days) return;
-        this.updateCountdown();
-        setInterval(() => this.updateCountdown(), 1000);
+        this.updateCountup();
+        setInterval(() => this.updateCountup(), 1000);
     }
 
-    updateCountdown() {
+    updateCountup() {
         const now = new Date().getTime();
-        const distance = now - this.targetDate;
+        const distance = now - this.startDate;
+
+        // Se a data inicial ainda não chegou, mostrar zeros
+        if (distance < 0) {
+            if (this.elements.days) this.elements.days.textContent = '00';
+            if (this.elements.hours) this.elements.hours.textContent = '00';
+            if (this.elements.minutes) this.elements.minutes.textContent = '00';
+            if (this.elements.seconds) this.elements.seconds.textContent = '00';
+            return;
+        }
 
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -564,50 +571,8 @@ class Preloader {
 }
 
 // ==========================================
-// 12. MAIN APP INITIALIZATION
+// 12. SERVICE ACCORDION FUNCTIONALITY
 // ==========================================
-
-class KwellaaApp {
-    constructor() {
-        this.init();
-    }
-
-    init() {
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', () => this.initializeComponents());
-        } else {
-            this.initializeComponents();
-        }
-    }
-
-    initializeComponents() {
-        // Initialize all components
-        new Navigation();
-        new CountdownTimer();
-        new StatsCounter();
-        new TabsManager();
-        new ScrollAnimations();
-        new ModalManager();
-        new DropdownManager();
-        new LazyLoader();
-        new RippleEffect();
-        new BackToTop();
-        new Preloader();
-
-        console.log('✅ Kwellaa App Initialized');
-    }
-}
-
-// ==========================================
-// START APPLICATION
-// ==========================================
-
-new KwellaaApp();
-
-// ========================================
-// SERVICE ACCORDION FUNCTIONALITY
-// Add to existing index.js
-// ========================================
 
 class ServiceAccordion {
     constructor() {
@@ -665,11 +630,44 @@ class ServiceAccordion {
     }
 }
 
-// Initialize ServiceAccordion when DOM is ready
-document.addEventListener('DOMContentLoaded', () => {
-    new ServiceAccordion();
-});
+// ==========================================
+// 13. MAIN APP INITIALIZATION
+// ==========================================
 
-// Or add to existing KwellaaApp class:
-// In the initializeComponents() method, add:
-// new ServiceAccordion();
+class KwellaaApp {
+    constructor() {
+        this.init();
+    }
+
+    init() {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.initializeComponents());
+        } else {
+            this.initializeComponents();
+        }
+    }
+
+    initializeComponents() {
+        // Initialize all components
+        new Navigation();
+        new CountupTimer(); // Substituído CountdownTimer por CountupTimer
+        new StatsCounter();
+        new TabsManager();
+        new ScrollAnimations();
+        new ModalManager();
+        new DropdownManager();
+        new LazyLoader();
+        new RippleEffect();
+        new BackToTop();
+        new Preloader();
+        new ServiceAccordion();
+
+        console.log('✅ Kwellaa App Initialized');
+    }
+}
+
+// ==========================================
+// START APPLICATION
+// ==========================================
+
+new KwellaaApp();
