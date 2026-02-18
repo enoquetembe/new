@@ -363,6 +363,13 @@ a {
     color: var(--dark);
 }
 
+.hero-sub {
+     font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
 .text-gradient {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
     -webkit-background-clip: text;
@@ -426,6 +433,7 @@ a {
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    margin-top: 40px;
 }
 
 .hero-stats {
